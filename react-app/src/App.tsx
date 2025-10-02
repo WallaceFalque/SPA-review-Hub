@@ -1,19 +1,11 @@
-import Header from "./Page/Header";
-import Layout from "./Page/layout";
-import Footer from "./Page/Footer";
-import hollowKnight from "./assets/hollow-knight.jpg";
+import MoveList from "./components/Navbar/movieList/MovieList";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div
-      className="min-h-screen bg-cover bg-center"
-      style={{
-        backgroundImage: `url('${hollowKnight}')`,
-      }}
-    >
-      <Header />
-      <Layout />
-      <Footer />
+    <div>
+      <Navbar />
+      <MoveList />
     </div>
   );
 }
